@@ -1,0 +1,30 @@
+﻿<!-- nav -->
+
+
+<nav class="navbar-fixed-top navbar-default" style="background-color:#3f98a7;color:#FFF;margin:0px;" *ngIf="currentUser">
+    <div class="container">
+
+        <a class="navbar-brand nav-color" href="#">ABC Co</a>
+
+
+      <ul class="nav navbar-nav navbar-right" style="padding-right:0px;text-align:right;">
+        <li ><a href="#" class="nav-color" (click)="logout()"><span class="glyphicon glyphicon-log-out" style="color:azure;"></span><span style="color:azure;"> Logout</span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- main app container -->
+<div class="container">
+<div class="jumbotron" style="background-color:white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+                <alert></alert>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
